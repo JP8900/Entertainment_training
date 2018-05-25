@@ -1,0 +1,22 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="comp3350.entertainment_tracker.presentation.HomeActivity"
+    >
+
+    <item
+        android:id="@+id/nav_watched"
+        android:title="Watched History"
+        android:onClick="onClickToWatched"
+        android:enabled="true"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/nav_planned"
+        android:title="Wish List"
+        android:onClick="onClickToWishList"
+        android:enabled="true"
+        android:visible="true" />
+
+
+</menu>

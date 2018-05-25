@@ -1,0 +1,56 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="comp3350.entertainment_tracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="comp3350.entertainment_tracker.presentation.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="comp3350.entertainment_tracker.presentation.CatalogActivity"
+            android:label="Catalog Activity" >
+            <intent-filter>
+                <action android:name="android.support.PARENT_ACTIVITY" />
+                <category android:name="android.intent.category.INFO" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="comp3350.entertainment_tracker.presentation.SearchActivity"
+            android:label="Search Results" >
+            <intent-filter>
+                <action android:name="android.support.PARENT_ACTIVITY"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="comp3350.entertainment_tracker.presentation.WatchedHistoryActivity"
+            android:label="Watched History">
+        </activity>
+
+        <activity android:name="comp3350.entertainment_tracker.presentation.WishListActivity"
+                  android:label="Wish List">
+        </activity>
+
+        <activity android:name=".presentation.InformationActivity"
+                  android:noHistory="true"
+                  android:theme="@style/InformationDialogTheme">
+        </activity>
+
+        <activity android:name="comp3350.entertainment_tracker.presentation.HomeActivity"
+            android:theme="@style/AppTheme.CustomTheme">
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,224 @@
+﻿How to use the log:
+	- write down what you worked on (with enough detail so others can understand what it was)
+	- write down how long it took you to do what you were working on
+	- be sure to clearly state your name
+
+****** ITERATION 1 *******
+
+2017/02/04 - Log created. (Denis)
+
+2017/02/04 7:00pm - Created project repository and made a test commit. (Denis)
+
+2017/02/04 2:00-6:30pm - Finished first menu and re-added stock activity bar (Brett)
+
+2017/02/08 10:30pm - Added a prototype of the layout we planned on implementing for the main screen (Eric)
+
+2017/02/09 1:00-2:40pm - Added a preliminary "EntertainmentItem" class (unused as of yet). Additional minor tweaks to main screen layout. (Eric)
+	
+NOTE: Demonstrated look and feel by including "The Avengers" as a movie.
+
+2017/02/09 10:00-10:30pm - Added a search button to the action bar in preparation for the search function programming. (Denis)
+
+2017/02/09 9:30-11:30pm - Added Book, TV show and Movie activities with their respective java files (MovieActivity, BookActivity, TvShowActivity). (Itse)
+
+2017/02/10 8:40-9:10pm	- Reworked the DataBaseStub file to fit with our project, and added 5 sample movies to it. (Denis)
+
+2017/02/11 5:10-5:20pm - Commented out all the .java files we don't use (Denis)
+
+2017/02/14 6:00-8:30pm - activity_catalog: merged the activity files for movies, books and tv shows and updated the layout
+			 Updated the home activity xml and java files
+				- added clickable buttons (movies, tv shows and books) and linked them to catalog activity (Itse)
+
+2017/02/15 2:45-5:30pm - added functionality to left/right buttons on home activity page. Images on the buttons will now cycle through the lists provided in the database stub. (Eric) 
+
+2017/02/19 11:40-1:30pm - restructured the way data access works. In order to access the dataAccessStub, you must now create an instance of Access'____', found in
+the 'Business' folder. I have also restructured the way left/right buttons work to accomodate. (Eric)
+
+2017/02/19 1:30-1:45pm - added separate classes for Movie, Book, and TVShow. Fixed a bug causing TVshow section to not display 4th item correctly.(Eric)
+
+
+
+2017/02/22 12:30 - 1:00pm - made it scrollable on home activity page. (Dylan)
+
+
+2017/02/22 2:00-5:00 pm- Search Bar addition + Search layout Design (Brett)
+
+2017/02/22 5:00-6:00 pm-  wrote activity XMLs for bookactivity, tvshowActivity and movieActivity in AndroidManifext.xml(Dylan)
+
+
+2017/02/22 6:00 - 6:20pm -  made MovieActivity in presentation folder. (Dylan)
+
+
+
+2017/02/22 6:20 - 7:00 - made different pages for each of categories (movie, tv show, book) and linked them to the related page. (Dylan)
+
+
+
+
+2017/02/22 7:30 - 8:00 pm- image buttons on main screen will now be initialized with a variety of images. (Eric)
+
+
+
+2017/02/23 1:20-3:00 - Created a WatchedRead and AccessWR classes This is how you may access the list(s) of watched/read books, shows, and tvshows that a user added (Eric)
+
+
+2017/02/23 1:20-3:00 - When a user clicks an item, this is added to lists in WatchedRead (including a master list containing everything). A message is displayed to verify. (Eric)
+
+
+
+
+2017/02/23 1:20-3:00 - Removed some unnecessary files. (Eric)
+
+
+
+2017/02/23 6:00-10:30 - added functionality to Movie, TV Show, and Book buttons; now lead to different screens with only that type shown (Eric)
+
+
+2017/02/23 6:00-10:30 - added functionality to Watched button on menu. Will now lead to a screen showing items the user has added to their watched/read list (Eric)
+
+2017/02/24 12:00-12:30pm - Altered a few files to improve code consistency and remove unnecessary code. Added "watched" image icon to repository. (Denis)
+
+2017/02/25 11:00-1:30am - Search Bar functionality + XML search layout code (Brett)
+
+2017/02/25 11:45-12:25pm - Changed the search method to be case-insensitive, also added search functionality to TVshows and Books. (Eric)
+
+
+2017/02/25 3:00 - 4:00pm added a method to delete watched items. (Dylan)
+
+
+
+2017/02/25 4:00 - 4:50pm a few bug fixed in WatchedList (Dylan)
+
+
+2017/02/27 7:00-8am - Implemented the "sort by" functionality. You can now sort by Title in ascending or descending order (Itse)
+
+2017/02/27 9:00-12am - General bugfixes, code cleanup, etc. (Eric)
+
+
+2017/02/28 12:30-1:30 - all the tests for Objects(Book, Movie, EntertainmentItem etc.) (Dylan)
+
+2017/02/28 2:00-3:00 - added Tests for the EntertainmentItem class (Eric)
+
+2017/02/28 7:45-8:30pm - Changed coding style for files to meet set guidelines. (Brett)
+
+2017/02/28 10:00 - 11:20pm - Altered nearly every file to ensure code consistency. Also changed some variable names to make them more descriptive. And removed "sort by" spinner from SearchActivity and WatchedListActivity because it did not yet work there. (Denis)
+
+2017/02/28 11:45-12:15am - added Tests to the suite for the WatchedList class (Eric)
+
+2017/03/1  12:00 - 12:35am -  added Tests to the suite for the Sorter class (Itse)
+
+****** ITERATION 2 *******
+
+2017/03/8 3:00 - 4:30 - Removed a bunch of duplicate code. Removed the need for individual TVShow, Movie, and Book objects. Other general refactoring. (Eric)
+
+2017/03/10 3:30 - 5:00 - Removed the need for separate activity files. (BookActivity, TvShowActivity, MovieActivity). Everything now runs under the CatalogActivity.class. Also removed separate Access classes (AccessBooks, AccessMovies, AccessTvShows)
+	- fixed a bug causing the Search to return occasionally invalid results.
+	- added quality of life fix, you may now only add an item to your watched list ONCE, otherwise you will recieve a Toast message saying you already have it in your list (Eric)
+
+2017/03/10 5:10 - 6:00 - made some major updates to the GUI, including colors, spacing, gradients, image styling, and others. Why? Because why not. (Eric)
+
+2017/03/11 (3 hours) - HomeActivity now dynamically adds as many views as it needs at runtime instead of relying on a hardcoded XML file. Did some additional consolidation of code to condense a lot of instances of 3 methods/loops/if statements/variables into a single one. Also removed the duplicate "Breaking Bad" item from the database stub. (Denis)
+
+2017/03/12 3:00-4:30pm - Edited WatchedListActivity and its layout so that it also dynamically adds as many views as it needs rather than relies on a hardcoded XML file. Also removed watched list size limit. (Denis)
+
+2017/03/12 (<5 minutes) - fixed a bug causing Search functionality to crash the app (Eric)
+
+2017/03/15 (~30 minutes) - Consolidated duplicate code in HomeActivity and WatchedListActivity related to dynamically adding new views by creating EntertainmentItemButton (Denis)
+
+2017/03/15 (~7 hours) - Changed the system to be now implemented with a database with persistent storage. 
+	- you can now enter into a watched list (and theoretically add items, if we had that code) to the system 
+	and it will be maintained after you exit the app
+	WARNING: if you make changes to the script, database location, or database name, you MUUUUST (!!!) uninstall the app on the tablet or emulator and reinstall, otherwise the local database will stay! (Eric)
+	- (10 minutes) - Added a prettier launch icon. (Eric)
+
+2017/03/17 - (~10 minutes) Added the xml file for the entertainment information page (Itse)
+
+2017/03/18 - (1.5 hours) All activities now dynamically add as many views as they need rather than rely on hardcoded XML files. (Denis)
+
+2017/03/18 - (2 hours) Changed the Manifest so pages correctly state their names, searchList now adds directly to watchList, added code to allow the title bar for catalogs to change based on what button from main was pressed (Brett)
+
+2017/03/18 - (~2.5 hours) Introduced Fragments to reduce duplicated code in WatchedListActivity, SearchActivity, and CatalogActivity. Because of the Fragment change some XML files were no longer necessary and were replaced with fragment_item_grid.
+NOTE: Be sure to carefully look over how the fragments are used and the need to implement ItemGridController if you want the fragment to call the activity back for item presses. (Denis)
+
+
+
+2017/03/18 (1 hour) Change the manifest so you can see the popup window with the transparent background
+
+ (Dylan)
+
+2017/03/18 (2 hours) When you longclick the item, the popup window shows up and confirm if you want to add the item or not. And When you want to do the regular click on the item, the description window will pop up and show the details of the item. (Dylan)
+
+2017/03/19 (~30 minutes) Did more cleanup, removed some dead code, also removed WatchedList by making some changes. (Denis)
+
+2017/03/20 (~20 minutes) Edited SorterTest so that it tests the comparator (Itse)
+
+
+
+2017/03/20 (~2 hours) Make the item addition functional in every page and the user can delete an item in watched list
+
+ (Dylan)
+
+2017/03/20 (~1 hour) removed and changed some dead code so that adding and removing functions work better (Dylan)
+
+2017/03/21 (~15 minutes) fixed a bug causing deleted items to not be updated in the database (Eric)
+
+2017/03/21 (1 hour) Readded the ability to sort entertainment items alphabetically and fixed a bug where deleting from the watched list and sorting afterward would cause the deleted item to reappear. (Denis)
+
+2017/03/21 (30 minutes) Fixed bug causing every Activity to look like the WatchedListActivity (Denis)
+
+2017/03/21 (1 hour) Added tests for the database stub, completed injection of Database stub for testing (Eric)
+
+****** ITERATION 3 *******
+
+2017/03/25 (~2 hours) Added the description of every item type to the database. Long clicking on an item now displays a description of the item. Altered most java files due to the added column in the database. Minor layout change in the information xml file (Itse)
+
+2017/03/25 (~10 minutes) Small database related bug fixes (Denis)
+
+2017/04/30 (15 minutes) Changes to activity now change the title dynamically (Brett)
+
+2017/03/31 (30 minutes) More small changes, removing dead code and such. Added the beginnings of what will become the 
+plan to watch" list (the button on the navigation menu). (Denis)
+
+
+
+2017/03/31 (2 hours) Modify the data file to see in other pages if the items are in the watched list and add more variables and methods for that.
+
+2017/03/31 (~20 minutes) Restructured the information page (activity_information.xml) and added rating bars for average and user ratings (Itse)
+
+2017/03/31 (1 hour) Added persistent average ratings to the rating bars (stored in DB).  (Eric)
+
+2017/04/01 (2 hours) Added a splash screen to appear while the app is loading (Brett)
+
+2017/04/01 (1 hour) Added a new table to the database in preparation for the "plan to watch" list. Also greatly changed DataAccessObject in order to reduce all the duplicate code and to change it to fit our style guide. (Denis)
+
+2017/04/03 (2 hours) Continued to fix up the data access layer a bit to clean it up according to what we discussed. Completed the addition of the "Wish List" feature. You can add items to your wish list through the same method as adding to the watched list. Converted InformationActivity to use the Android Dialog theme rather than the "hack" used before to make it look like a dialog box. Renamed WatchedList to WatchedHistory across the board. (Denis)
+
+2017/04/03 (2 hours) Added persistence to user ratings. (Eric)
+
+2017/04/04 (~15 minutes) You can now sort by highest rating. Choosing "Sort by" shows the default list (Itse)
+
+2017/04/06 (4.5 hours) Added more content to the database, reformatted stub database and tests to conform to the new objects, added tests against the stub for ratings (Brett)
+
+2017/04/06 (4 hours) Nearly completed the addition of small "add to watched history" and "add to wish list" buttons to replace the older dialog box system we had. The only place they don't work is the HomeActivity. (Denis)
+
+2017/04/06 (30 minutes) The previously mentioned buttons now also work on the HomeActivity (Denis)
+
+2017/04/06 (30 minutes) Changed presentation of watched/wished mini-buttons. Activated now appear as mostly-opaque green, and non-activated have no background. (Eric)
+
+2017/04/08 (3.5 hours) near-completed all Acceptance tests. (Eric)
+
+2017/04/09 (1 hour) Moved view item information to short click, and made it possible to view information in every activity instead of only HomeActivity. I also changed the icons and their colours for the wish list and watched history buttons. (Denis)
+
+
+
+2017/04/09 (5 hours) have completed integration tests(Dylan)
+
+2017/04/09 (2 hours) Bug fixes and clean up. (Denis)
+
+
+
+2017/04/09 (2 hours) fixing the problem where test doesn’t work on the stub class and hardcoded and place the items in an alphabetical orders in stub class (Dylan)
+
+2017/04/09 (1 hour) Added more Unit Tests (Brett)
+
+2017/04/09 (~10 minutes) Added more Acceptance tests (Itse)
